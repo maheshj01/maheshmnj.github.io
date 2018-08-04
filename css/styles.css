@@ -1,0 +1,104 @@
+
+nav .navbar-nav li a{
+    color: black !important;
+    }
+    
+  .navbar-light a{
+  
+    text-decoration: none;
+    font-weight: bold;
+    font-size:calc(15px + 0.3vw);
+    font-family:"Raleway",monospace;
+    margin-right: 30px;
+  /*  padding: 3px 5px 3px 5px;
+  */}
+  
+  .navbar-light a:hover{
+    color:white;
+    background-color: grey;
+    border-radius: 5px;
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  .picture img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 10px solid white;
+    /* transform: translate(35%); */
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+}  
+  
+  .namewriter p{
+    font-size: calc(35px + 1vw);
+    color: white;
+    animation: 2s ease-out 0s 1 slideInFromRight;
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0.7%);
+    }
+  }
+  /* intro text typewriter effect*/
+  #introtext{
+    max-height: 400px;
+    height: 250px;
+    color: black;
+    font-size:calc(10px + 1vw);
+    font-family: "Raleway","Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; 
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  #intro .row{
+    max-height: 600px;
+    }
+    
+    .mb-0 p{
+    font-size: 30px;
+    
+    }
+    
+    .list-social-icons a {
+      color: #495057;
+    }
+    
+    .list-social-icons a:hover {
+      color: #4286f4;
+    }
+    
+    .project-content a:hover{
+      color: black;
+      text-decoration: none;
+    
+    }
+    .skill-set:hover{
+      color:white;
+      background-color: grey;
+      transform: scale(1.02);
+      transition: 1s;
+    }
+    .skill-set h6{
+      color:green;
+    }
+    
+    .skill-set:hover h6{
+      color:black;
+      transition:1s;
+    }
