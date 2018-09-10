@@ -1,4 +1,4 @@
-<!doctype html>
+<<!doctype html>
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -276,19 +276,27 @@
                             </span>
                             </a>
                         </li>
+                        <li class="list-inline-item">
+                          <a href="https://www.quora.com/profile/Mahesh-Jamdade-4" title="quora">
+                          <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x text-dark"></i>
+                          <i class="fa fa-quora fa-stack-1x fa-inverse"></i>
+                          </span>
+                          </a>
+                      </li>
                         <p id="sent" style="color: white;"></p>
                     </ul>       
                
                     <form id="connect-form" method="POST">
                           <div class="row">     
                                <div class="list-group-item bg-secondary col-lg-6 col-sm-12 col-md-6" style="border: 0px">
-                                    <input type="text" class="form-control mb-3" id="name" placeholder="Name" required="Required" />
-                                    <input type="email" class="form-control mb-3" id="email" placeholder="Email" required="Required" />
-                                    <input type="text" class="form-control mb-3" id="subject" placeholder="Subject" required="Required" />       
+                                    <input type="text" class="form-control mb-3" id="name" onblur="validname()" placeholder="Name" />
+                                    <input type="email" class="form-control mb-3" id="email"onblur="validemail()" placeholder="Email" />
+                                    <input type="text" class="form-control mb-3" id="subject" onblur="validsubject()"  placeholder="Subject" />       
                                </div>
                  
-                          <div class="list-group-item bg-secondary col-lg-6 col-sm-12 col-md-6" style="border: 0px;">  
-                               <textarea class="form-control " name="message" rows="5" id="message" placeholder="message" style="resize: none; width: 100%; box-sizing: border-box; height: 100%; " required></textarea>
+                          <div class="list-group-item bg-secondary col-lg-5 col-sm-12 col-md-5" style="border: 0px;">  
+                               <textarea class="form-control " name="message" rows="5" id="message" onblur="validmessage()" placeholder="message" style="resize: none; width: 100%; box-sizing: border-box; height: 100%; "/></textarea>
                           </div>
                           <div class="btn-submit col-lg-6 col-md-6 col-sm-12 mb-3">
                           <button id="submit" type="submit" onclick="submitOnClick()" class="btn btn-basic ml-1 mr-1" style="width: 99%;">submit</button> 
@@ -309,7 +317,5 @@
             <!-- Plugin JavaScript -->
             <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
         
-            <!-- Custom scripts for this template -->
-            <script src="js/resume.min.js"></script>
     </body>
     </html>
