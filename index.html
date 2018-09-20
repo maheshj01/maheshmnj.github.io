@@ -29,6 +29,10 @@
       };
       firebase.initializeApp(config);
     </script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
@@ -232,88 +236,101 @@
                     </div>
                 </div>
               
-                <div class="card bg-secondary pl-2 pr-2 mb-4 pb-3 mt-3" style="border: 0px;"> 
-                     <h2 id="letsconnect" class="connect mt-2 ml-3" style="color: white;">Lets Connect</h2> 
-                     <ul class="list-inline list-social-icons ml-2 mb-0">
-                           
-                         <li class="list-inline-item">
-                             <a href="https://fb.com/maheshmnj" title="facebook">
-                             <span class="fa-stack fa-lg">
-                             <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                             <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                             </span>
-                             </a>
-                         </li>
-                         <li class="list-inline-item">
-                             <a href="https://twitter.com/maheshmnj" title="twitter">
-                             <span class="fa-stack fa-lg">
+                <div class="card mb-4 pb-3 ml-1 pl-1 pr-1 pt-3 mr-1 mt-1" style="border-radius: 5px;"> 
+                    <div class="card-title text-center ml-2 mr-2 bg-dark" style="border-radius: 5px;">
+                            <h2 id="letsconnect" class="icons mt-2 text-light">Lets Connect</h2> 
+                        </div>  
+                    <div class="icons text-center">     
+                         <ul class="list-inline list-social-icons ml-2 mb-0">
+                               
+                             <li class="list-inline-item">
+                                 <a href="https://fb.com/maheshmnj" title="facebook">
+                                 <span class="fa-stack fa-lg">
+                                 <i class="fa fa-circle fa-stack-2x text-dark"></i>
+                                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                 </span>
+                                 </a>
+                             </li>
+                             <li class="list-inline-item">
+                                 <a href="https://twitter.com/maheshmnj" title="twitter">
+                                 <span class="fa-stack fa-lg">
+                                  <i class="fa fa-circle fa-stack-2x text-dark"></i>
+                                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                 </a>
+                             </li>
+                             <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/maheshjamdade/" title="linkedin">
+                                <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-dark"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="https://instagram.com/maheshmnj/" title="Instagram">
+                              <span class="fa-stack fa-lg">
                               <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                              <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
                               </span>
-                             </a>
-                         </li>
-                         <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/maheshjamdade/" title="linkedin">
-                            <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                          <a href="https://instagram.com/maheshmnj/" title="Instagram">
-                          <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                          </span>
-                          </a>
-                        </li>    
-                        <li class="list-inline-item">
-                            <a href="https://github.com/maheshmnj/" title="github">
-                            <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                          <a href="https://www.quora.com/profile/Mahesh-Jamdade-4" title="quora">
-                          <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                          <i class="fa fa-quora fa-stack-1x fa-inverse"></i>
-                          </span>
-                          </a>
-                      </li>
-                        <p id="sent" style="color: white;"></p>
-                    </ul>       
-               
-                    <form id="connect-form" method="POST">
-                          <div class="row">     
-                               <div class="list-group-item bg-secondary col-lg-6 col-sm-12 col-md-6" style="border: 0px">
-                                    <input type="text" class="form-control mb-3" id="name" onblur="validname()" placeholder="Name" />
-                                    <input type="email" class="form-control mb-3" id="email"onblur="validemail()" placeholder="Email" />
-                                    <input type="text" class="form-control mb-3" id="subject" onblur="validsubject()"  placeholder="Subject" />       
-                               </div>
-                 
-                          <div class="list-group-item bg-secondary col-lg-5 col-sm-12 col-md-5" style="border: 0px;">  
-                               <textarea class="form-control " name="message" rows="5" id="message" onblur="validmessage()" placeholder="message" style="resize: none; width: 100%; box-sizing: border-box; height: 100%; "/></textarea>
-                          </div>
-                          <div class="btn-submit col-lg-6 col-md-6 col-sm-12 mb-3">
-                          <button id="submit" type="submit" onclick="submitOnClick()" class="btn btn-basic ml-1 mr-1" style="width: 99%;">submit</button> 
-                          </div>
-                          </div>                         
-                   </form> 
-                   <script type="text/javascript" src="js/firebase.js"></script>
+                              </a>
+                            </li>    
+                            <li class="list-inline-item">
+                                <a href="https://github.com/maheshmnj/" title="github">
+                                <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x text-dark"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="https://www.quora.com/profile/Mahesh-Jamdade-4" title="quora">
+                              <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle fa-stack-2x text-dark"></i>
+                              <i class="fa fa-quora fa-stack-1x fa-inverse"></i>
+                              </span>
+                              </a>
+                          </li>
+                            <p id="sent" style="color: white;"></p>
+                        </ul>       
+                 </div>      <!-- end of head+icons -->
+                        <form id="connect-form" method="POST">
+                            <div class="row">
+                                <div class="card-body col-lg-6 col-sm-12  col-md-6">
+                                    <div class="md-form mt-3">
+                                        <input type="text" id="materialContactFormName" class="form-control">
+                                        <label for="materialContactFormName">Name</label>
+                                    </div>
+                                    <div class="md-form mb-3" id="email" placeholder="Email">
+                                        <input type="text" class="form-control mb-3" id="name" onblur="validname()"/>
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="md-form mb-3" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control mb-3" id="name" onblur="validname()"/>
+                                        <label for="subject">Subject</label>
+                                    </div>        
+                                </div>
+                                <div class="card-body col-lg-6 mt-2 col-sm-12 col-md-6">  
+                                    <div class="md-form">    
+                                        <textarea class="form-control md-textarea" name="message" rows="4" id="message" 
+                                         placeholder="say Hi, and I will probably get back to you in 24 hrs :)" style="resize: none; width: 100%; box-sizing: border-box; height: 100%;"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>      
+                            </div> 
+                                    <button class="btn btn-dark btn-block" type="submit">Submit</button>
+                                                     
+                        </form> 
+                      
                 </div>
-              
-        </div>
                   
       
         
          <!-- Bootstrap core JavaScript -->
             <script src="vendor/jquery/jquery.min.js"></script>
             <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        
+            <!-- MDB CORE JAVASCRIPT -->
+            <script type="text/javascript" src="js/mdb.min.js"></script>
             <!-- Plugin JavaScript -->
             <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
         
