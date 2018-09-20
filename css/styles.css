@@ -102,3 +102,6 @@ nav .navbar-nav li a{
     color:black;
     transition:1s;
   }
+  .skill-set:hover .card-text{
+    color: white;
+  }
