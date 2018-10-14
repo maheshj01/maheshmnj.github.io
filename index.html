@@ -15,20 +15,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyB2hWFLm6IVcWtWZHX5OjctQuftCry_-_M",
-        authDomain: "my-portfolio-121.firebaseapp.com",
-        databaseURL: "https://my-portfolio-121.firebaseio.com",
-        projectId: "my-portfolio-121",
-        storageBucket: "",
-        messagingSenderId: "859254383443"
-      };
-      firebase.initializeApp(config);
-    </script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB2hWFLm6IVcWtWZHX5OjctQuftCry_-_M",
+      authDomain: "my-portfolio-121.firebaseapp.com",
+      databaseURL: "https://my-portfolio-121.firebaseio.com",
+      projectId: "my-portfolio-121",
+      storageBucket: "my-portfolio-121.appspot.com",
+      messagingSenderId: "859254383443"
+    };
+    firebase.initializeApp(config);
+  </script>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -53,7 +52,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script>
+<!--     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script> -->
 	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -122,7 +121,7 @@
                               <div class="project-content col-lg-6 col-md-6 col-sm-12" style="text-align: justify">
                                    <h3 class="mb-0">SWWN</h3>
                                    <h5>Android App</h5>
-                                   <p style="font-family:Raleway,helvlight,arial;font-size:18px;">
+                                   <p style="font-family: Raleway,helvlight,arial;font-size:18px;">
                                     I had an oportunity to work as an intern at <a href="http://handsintechnology.com/"> Hands in Technology</a> Mumbai,We were a team of three passionate people and we worked on a development of an Android App for an ecommerce firm <a href="https://socialworldwidenetwork.com/"> Social World Wide Network</a> which sells cosmetics.<br>It was a great Experience to learn about the Environment in a IT Sector and to Learn from the Real Time Developers.
                                    </p>
                               </div>
@@ -236,9 +235,9 @@
                     </div>
                 </div>
               
-                <div class="card mb-4 pb-3 ml-1 pl-1 pr-1 pt-3 mr-1 mt-1" style="border-radius: 5px;"> 
+                <div class="card mb-4 pb-3 ml-1  pt-1 mr-1 mt-1" style="border-radius: 5px;"> 
                     <div class="card-title text-center bg-dark" style="border-radius: 5px;height: 60px">
-                            <h2 id="letsconnect" class="icons mt-2 text-light">Lets Connect</h2> 
+                            <h2 id="letsconnect" class="icons  text-light">Lets Connect</h2> 
                         </div>  
                     <div class="icons text-center">     
                          <ul class="list-inline list-social-icons ml-2 mb-0">
@@ -298,36 +297,34 @@
                             <div class="row">
                                 <div class="card-body col-lg-6 col-sm-12  col-md-6">
                                     <div class="md-form mt-3">
-                                        <input type="text" id="materialContactFormName" class="form-control">
+                                        <input type="text" id="name" class="form-control" required="required">
                                         <label for="materialContactFormName">Name</label>
                                     </div>
-                                    <div class="md-form mb-3" id="email" placeholder="Email">
-                                        <input type="text" class="form-control mb-3" id="name" onblur="validname()"/>
+                                    <div class="md-form mb-3" placeholder="Email">
+                                        <input type="text" class="form-control mb-3" id="email" required="required">
                                         <label for="email">Email</label>
                                     </div>
-                                    <div class="md-form mb-3" id="subject" placeholder="Subject">
-                                        <input type="text" class="form-control mb-3" id="name" onblur="validname()"/>
+                                    <div class="md-form mb-3" placeholder="Subject">
+                                        <input type="text" class="form-control mb-3"  id="subject" required="required">
                                         <label for="subject">Subject</label>
                                     </div>        
                                 </div>
                                 <div class="card-body col-lg-6 mt-2 col-sm-12 col-md-6">  
                                     <div class="md-form">    
                                         <textarea class="form-control md-textarea" name="message" rows="4" id="message" 
-                                         placeholder="say Hi, and I will probably get back to you in 24 hrs :)" style="resize: none; width: 100%; box-sizing: border-box; height: 100%;"></textarea>
+                                         placeholder="say Hi, and I will probably get back to you in 24 hrs :)" style="resize: none; width: 100%; box-sizing: border-box; height: 100%;" required="required"></textarea>
                                         <label for="message">Message</label>
                                     </div>
                                 </div>      
                             </div> 
                             <div class="form-action" style="text-align: center;margin: auto" >
-                                    <button class="btn btn-elegant btn-block" type="submit" style="height: 50px;width: 50%;" >Submit</button>
-                                </div> 
-                                                     
+                                    <button onclick="contactuser()" class="btn btn-elegant btn-block" type="submit" style="height: 50px;width: 50%;" >Submit</button>
+                                </div>
+                          <script type="text/javascript" src="js/firebase.js"></script>    
+                          <script type="text/javascript" src :"js/file.js"></script>                    
                         </form> 
-                      
                 </div>
                   
-      
-        
          <!-- Bootstrap core JavaScript -->
             <script src="vendor/jquery/jquery.min.js"></script>
             <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -338,4 +335,3 @@
         
     </body>
     </html>
-
