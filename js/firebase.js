@@ -1,33 +1,36 @@
 firebase.initializeApp(config);
-var firebaseRef = firebase.database().ref();
-var Name = document.getElementById("name"); 
-var Email = document.getElementById("email");;
-var subject = document.getElementById("subject");
-var message = document.getElementById("message");
+
 var time = new Date().toLocaleTimeString(); // 11:18:48 AM
 var date = new Date().toLocaleDateString(); // 11/16/2015 
-var x=0;
+//document.getElementById("sendonclick").addEventListener("click", submitOnClick);
 
-function submitOnClick(){
-console.log("x=" + x);
-if(x){
-	firebaseRef.child("MESSAGES").push(
-		{
-		username: Name,
-    	email: Email,
-    	Subject:subject,
-    	Message:message,
-    	Time:time,
-    	Date:date
-		});
-		submitted();
-		clearfields()	
-	}
-	else{
-		console.log("fields are empty");
-		alert("Data fields are empty");
-	}
-}
+function contactuser(){
+
+	var Name = document.getElementById("name").value; 
+	var Email = document.getElementById("email").value;
+	var subject = document.getElementById("subject").value;
+	var message = document.getElementById("message").value;
+	//alert("Button Clicked" + "Name: " + Name + "Email:" +Email + " subject:"+ subject );
+	
+	firebase.database().ref("MESSAGES/"+ Name +" "+time).set({
+    username: Name,
+    email: Email,
+    subject:subject,
+    Message:message,
+    Time:time,
+    Date:date
+  }).then(function(){
+  	alert("ok");
+  	console.location("sent to firebase");
+  	window.location.href="ResponseSent.html";
+  })
+  .catch(function(error){  	
+  	alert("error:" + error);
+   console.log("Message not sent");
+  });
+
+ }
+
 
 function submitted(){
 	document.getElementById("sent").innerHTML = "Your Message has been Sent to User";
