@@ -20,9 +20,9 @@ function contactuser(){
     Time:time,
     Date:date
   }).then(function(){
-  	alert("ok");
-  	console.location("sent to firebase");
-  	window.location.href="ResponseSent.html";
+  	//alert("ok");
+  	console.log("sent to firebase");
+  	window.location.href="https://maheshmnj.github.io/js/ResponseSent.html";
   })
   .catch(function(error){  	
   	alert("error:" + error);
