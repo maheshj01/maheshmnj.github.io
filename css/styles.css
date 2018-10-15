@@ -105,3 +105,10 @@ nav .navbar-nav li a{
   .skill-set:hover .card-text{
     color: white;
   }
+
+  #resbutton:focus{
+      text-decoration: none;
+  outline:none;
+ 
+  box-shadow: none;
+  }  
