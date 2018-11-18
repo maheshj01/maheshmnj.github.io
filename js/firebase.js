@@ -11,6 +11,10 @@ function contactuser(){
 	var subject = document.getElementById("subject").value;
 	var message = document.getElementById("message").value;
 	//alert("Button Clicked" + "Name: " + Name + "Email:" +Email + " subject:"+ subject );
+	if(Name.value == null || Email.value == null || subject.value == null || message.value == null){
+		window.alert("one or more fields left empty");
+		return;
+	}
 	
 	firebase.database().ref("MESSAGES/"+ Name +" "+time).set({
     username: Name,
@@ -20,7 +24,7 @@ function contactuser(){
     Time:time,
     Date:date
   }).then(function(){
-  	//alert("ok");
+  	alert("ok");
   	console.log("sent to firebase");
   	window.location.href="https://maheshmnj.github.io/js/ResponseSent.html";
   })
