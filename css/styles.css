@@ -1,10 +1,5 @@
 
-nav .navbar-nav li a{
-  color: black !important;
-  }
-  
 .navbar-light a{
-
   text-decoration: none;
   font-weight: bold;
   font-size:calc(15px + 0.3vw);
@@ -13,12 +8,9 @@ nav .navbar-nav li a{
 /*  padding: 3px 5px 3px 5px;
 */}
 
-.navbar-light a:hover{
-  color:white;
-  background-color: grey;
-  border-radius: 5px;
-  transform: scale(1.1);
-  transition: 0.5s;
+nav li a:hover{
+color:green !important;
+
 }
 
 .picture img {
@@ -64,6 +56,10 @@ nav .navbar-nav li a{
   text-align: center;
   font-weight: bold;
   vertical-align: middle;
+}
+
+.project a:hover{
+  color: red;
 }
 
 #intro .row{
