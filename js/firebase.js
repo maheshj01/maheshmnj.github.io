@@ -5,16 +5,37 @@ var date = new Date().toLocaleDateString(); // 11/16/2015
 //document.getElementById("sendonclick").addEventListener("click", submitOnClick);
 
 function contactuser(){
-
 	var Name = document.getElementById("name").value; 
 	var Email = document.getElementById("email").value;
 	var subject = document.getElementById("subject").value;
 	var message = document.getElementById("message").value;
 	//alert("Button Clicked" + "Name: " + Name + "Email:" +Email + " subject:"+ subject );
-	if(Name == null || Email == null || subject == null || message == null){
-		window.alert("one or more fields left empty");
-		return;
-	}
+	if (Name == null || Name == "") {
+    var nameError = "Please enter your name";
+    alert(nameError);
+ //   document.getElementById("name_error").innerHTML = nameError; 
+    return false;
+} 
+
+ if (Email == null || Email == "") {
+    var emailError = "Please enter your email";
+ //   document.getElementById("email_error").innerHTML = emailError;
+    alert(emailError);
+    return false;
+} 
+
+ if (subject == null || subject == "") {        
+    var subjectError = "Please enter your Subject";
+ //   document.getElementById("telephone_error").innerHTML = telephoneError;
+ 	alert(subjectError);
+    return false;
+}
+ if (message == null || message == "") {        
+    var messageError = "Please enter your Message";
+//    document.getElementById("telephone_error").innerHTML = telephoneError;
+	alert(messageError);
+    return false;
+} 
 	
 	firebase.database().ref("MESSAGES/"+ Name +" "+time).set({
     username: Name,
@@ -32,6 +53,7 @@ function contactuser(){
    console.log("Message not sent");
   });
 
+   return true;
  }
 
 
@@ -42,40 +64,7 @@ function submitted(){
 	}, 10000);
 }
 
-function validname(){
-	
-	if(Name.value=="" || Name.value==null){
-		x=0;
-		Name.style.border="2px solid red";
-	}
-	else {
-		x=1;
-		Name.style.border="0px solid green"
-	}
-}
 
-function validemail(){
-	if(Email.value=="" || Email.value==null){
-	Email.style.border = "2px solid red";
-	x=0;
-	}
-else{
-	x=1;
-	Email.style.border = "0px solid green";
-	}
-}
-
-function validsubject(){
-	if(subject.value=="" || subject.value==null)
-	{
-		x=0;
-		subject.style.border = "2px solid red";
-	}
-else{
-	x=1;
-	subject.style.border = "0px solid green";
-}
-}
 
 function validmessage(){
 	if(message.value=="" || message.value==null){
@@ -85,7 +74,7 @@ function validmessage(){
 else{
 	x=1;
 	message.style.border = "0px solid green";
-}
+   }
 }
 
 function clearfields(){
