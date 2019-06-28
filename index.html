@@ -1,19 +1,20 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122355849-1"></script>
-	<script>
-  	window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-  	gtag('config', 'UA-122355849-1');
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122355849-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122355849-1');
   </script>
-  
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
   <script>
@@ -28,331 +29,373 @@
     };
     firebase.initializeApp(config);
   </script>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-  
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Cabin+Condensed|Dancing+Script|Indie+Flower|PT+Sans|Biryani|Raleway" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-    
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="icon" href="img/favicon.png">
-    <title>Mahesh Jamdade</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+    integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
-    <!-- Optional JavaScript --> 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
-<!--     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script> -->
-	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Bad+Script|Cabin+Condensed|Dancing+Script|Indie+Flower|PT+Sans|Biryani|Raleway"
+    rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse pl-auto" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About </a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#skills">Skills</a>
-                </li>
-               <!--  <li class="nav-item">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png">
+  <title>Mahesh Jamdade</title>
+</head>
+
+<body>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+    integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+  <!--     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse pl-auto" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <!--  <li class="nav-item">
                   <a class="nav-link" href="#gallery">Gallery</a>
                 </li> -->
-                <li class="nav-item">
-                  <a class="nav-link" href="#letsconnect">Lets Connect</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div class="container-fluid">  
-               <div class="row bg-dark mt-5 pt-5 pb-4" id="about">
-                <div class="picture col-lg-6 col-sm-12 image text-center text-lg-left pl-lg-5" >
-                         <img src="img/profile.png" class="img-fluid" alt="Avatar" >
-                    </div>  
-                    <div class="namewriter col-lg-6 col-sm-12 justify-content-center d-flex align-items-lg-center align-items-sm-top">
-                      <p>Mahesh Jamdade</p>
-                  </div>
-               </div>
+        <li class="nav-item">
+          <a class="nav-link" href="#letsconnect">Lets Connect</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row bg-dark mt-5 pt-5 pb-4" id="about">
+      <div class="picture col-lg-6 col-sm-12 image text-center text-lg-left pl-lg-5">
+        <img src="img/profile.png" class="img-fluid" alt="Avatar">
+      </div>
+      <div class="namewriter col-lg-6 col-sm-12 justify-content-center d-flex align-items-lg-center align-items-sm-top">
+        <p>Mahesh Jamdade</p>
+      </div>
+    </div>
 
-               <div class="typewriter mt-lg-3 pt-5 justify-content-center col-lg-10 offset-lg-1 d-flex align-items-center">
-                    <p id="introtext"></p>
-                    <script>
-                      var i = 0;
-                      var txt = '"Hi, My Name is Mahesh,I am an Under Grad self Learner,Tech enthusiast,Software developer,Programmer.I build mobile and web applications for personal and commercial use,I love building stuffs, Travelling places,meeting new people and developing new Skills"';
-                      var speed = 52;
-                      typeWriter()
-                      function typeWriter() {
-                        if (i < txt.length) {
-                        document.getElementById("introtext").innerHTML += txt.charAt(i);
-                        i++;
-                        setTimeout(typeWriter, speed);
-                        }
-                      }
-                    </script>
-               </div>  
-               <div class="card mt-4 mb-2 pb-1 bg-light" id="projects">
-                    <h1 class="bg-dark text-light pb-2 pl-3">Projects</h1>   
-                    <div class="project"> 
-                         <div class="row pr-3 pl-3">
-                              <div class=" card project-content pt-2 col-lg-6 col-md-6 col-sm-12" style="text-align: justify">
-                              	<a href="https://photos.google.com/share/AF1QipNaBFGZzQhmGWt4PvZlPzhEOXpQCRTDx-Ti8ZxpTyfSRs4cTaSjYBe1NeRQNtzFgQ?key=MnRON1czR2tBSEY1UVUxS18yVzdScFR0d0R6aTNR">
-                                  <h3 class="mb-0" >School Software</h3>
-                                  <h5>Desktop Application</h5>
-                                  <p style="font-family:Raleway,helvlight,arial;font-size:18px; ">
-                                  <a href="https://saurabh47.github.io">My friend</a> and I developed a school software, which can generate a photocopy of Transfer Certificate,Bonafide, and any type of official document,We have built this software using the javafx library.to make this software look rich and premium we have made use of the jfoenix library.JFoenix is an open source java library, that implements Google Material Design using java components.you can take a look at <a href="https://photos.app.goo.gl/pBdQjAy2eu7VJwVX8">couple of shots of the software  here</a>.
-                                  </p>
-                                  </a>
-                              </div>
-                              <a href="https://github.com/TamtePrathamesh/SWWN">
-                              <div class=" card project-content pt-2 col-lg-6 col-md-6 col-sm-12" style="text-align: justify">
-                                   <h3 class="mb-0">SWWN</h3>
-                                   <h5>Android App</h5>
-                                   <p style="font-family: Raleway,helvlight,arial;font-size:18px;">
-                                    I had an oportunity to work as an intern at <a href="http://handsintechnology.com/"> Hands in Technology</a> Mumbai. We were a team of three passionate people and we worked on a development of an Android App for an ecommerce firm  which sells cosmetics.<br>It was a great Experience to learn about the Environment in a IT Sector and to Learn from the Real Time Developers.
-                                   </p>
-                              </div>
-                          </a>
-                               <div class="card project-content mt-2 col-lg-6 col-md-6 col-sm-12" style="text-align: justify">
-                                  <a href="https://github.com/maheshmnj/Project-Uber-Auto">
-                                  <h3 class="mb-0" >Project Uber Auto</h3>
-                                  <h5>Android Application</h5>
-                              </a>
-                                  <p style="font-family:Raleway,helvlight,arial;font-size:18px; ">
-                                  This is My College Project with an intention to build a Similar mobile application like Uber for Local Auto Rickshaws in the Town,This is built purely using Android Studio and FireStore in the Backend.
-                                  </p>
-                              </div>
-                              <div class="card project-content mt-2 col-lg-6 col-md-6 col-sm-12" style="text-align: justify">
-                                  <a href="#">
-                                  <h3 class="mb-0" >Web Scraping</h3>
-                                  <h5>To scrap results from the University Web page and notify to students</h5>
-                              </a>
-                                <h2>Still working on it,Will be Updated SOON</h2>
-                              </div>
-                            <div class="card project-content mt-2 col-12 pt-3 pb-3 mb-2" style="text-align: center;">
-                              <a href="https://github.com/maheshmnj"><h3 id="skills">Other Projects I am working on...</h3></a>
-                          </div>     
-                    </div>
-               </div>
-               <div class="card">
-                    <h1 class=" bg-dark text-light pl-3">Skills</h1>
-                    <div class="row pr-3 pl-3">
-                         <div class="skill-set col-lg-3 col-md-3 col-sm-6 col-xs-6 pt-3" style="border-radius: 5px;"> 
-                              <img class="card-img-top" src="img/java-logo.png" alt="Card image cap" style="border-radius: 50%;">
-                              <div class="card-body">
-                                  <h5 class="card-title">Core Java </h5>
-                                  <p class="card-text">Java has been really fascinating me since I started learning it, I have developed enough skills to develop desktop applications,and I have developed couple of standalone desktop GUI Applications using JavaFX from scratch.
-                                  </p>
-                              </div>
-                        </div> 
-                        <div class="skill-set col-lg-3 col-md-3 col-sm-6 col-xs-6 pt-3" style="border-radius: 5px;"> 
-                             <img class="card-img-top" src="img/python.png" alt="Card image cap"  style="border-radius: 50%;">
-                             <div class="card-body">
-                                 <h5 class="card-title">Python</h5>
-                                 <p class="card-text">I am quite well familiar to python after having studied various basic programming languages like c and c++,I find python so interesting and useful to be used in numerous fields,I would love to explore different frameworks in python,I have actually built a basic Telegram bot in python 3,you can find the source on Github
-                                 </p>    
-                            </div>
-                        </div>
-                        <div class="skill-set col-lg-3 col-md-3 col-sm-6 col-xs-6 pt-3"style="border-radius: 5px;"> 
-                             <img class="card-img-top" src="img/android.png" alt="Card image cap" style="border-radius: 50%;">
-                             <div class="card-body">
-                                  <h5 class="card-title">Android</h5>
-                                  <p class="card-text">My core basics of JAVA helped me to understand and get used to Android Environment in a jiffy,I am more comfortable during the development process when it comes to designing the layouts and pages and I make sure the layouts suite the best on all screen sizes.</p>
-                            </div>
-                       </div>
-                       <div class="skill-set col-lg-3 col-md-3 col-sm-6 col-xs-6 pt-3" style="border-radius: 5px;"> 
-                            <img class="card-img-top" src="img/c++.png" alt="Card image cap" style="border-radius: 50%;">
-                            <div class="card-body">
-                                 <h5 class="card-title">C++</h5>
-                                 <p class="card-text">C and C++ have been a great way to start coding and basically C was my first programming language when I first ran "Hello World",And these languages helped me build some good understanding in data structures and How codes actually do the magic."
-                                 </p>
-                            </div>
-                      </div>  
-                    </div>
-                    <h2 class="bg-dark text-light pl-3 mt-2 pt-2 pb-2">Web Development</h2>
-                    <div class="row pr-3 pt-1 pl-3 pb-3">
-                      <div class="skill-set col-lg-3 col-md-3 col-sm-6 pt-3" style="border-radius: 5px;"> 
-                             <img class="card-img-top" src="img/javascript_logo.png" alt="Card image cap" style="border-radius: 50%;">
-                             <div class="card-body">
-                                  <h5 class="card-title">JavaScript</h5>
-                                  <p class="card-text">I have recently started learning Java Script and I am sure once Iam done with that I will have a complete package to build the Front end for Web.</p>
-                             </div>
-                        </div>
-                      <div class="skill-set col-lg-3 col-md-3 col-sm-6 pt-3" style="border-radius: 5px;"> 
-                          <img class="card-img-top" src="img/nodejs.png" alt="Card image cap" style="border-radius: 50%;">
-                          <div class="card-body">
-                            <h5 class="card-title">NodeJs </h5>
-                            <p class="card-text">To build Scalabale applications on the cloud I am using nodejs and I am currently using it for my IOT cloud platform project.
-                            </p>
-                          </div>
-                      </div>
-                      <div class="skill-set col-lg-3 col-md-3 col-sm-6 pt-3" style="border-radius: 5px;"> 
-                          <img class="card-img-top" src="img/MDB.png" alt="Card image cap" style="border-radius: 50%;">
-                          <div class="card-body">
-                            <h5 class="card-title">MongoDb </h5>
-                            <p class="card-text">I am a great fan of NoSql databases because its simple to use,great Option for Scalable and dynamic applications.And I am currentl using it with nodejs in my IOT Webserver project.
-                            </p>
-                          </div>
-                      </div>
-                         <div class="skill-set col-lg-3 col-md-3 col-sm-6 pt-3" style="border-radius: 5px;"> 
-                              <img class="card-img-top" src="img/html-css.png" alt="Card image cap" style="border-radius: 50%;">
-                              <div class="card-body">
-                                   <h5 class="card-title">HTML 5 & CSS3 </h5>
-                                   <p class="card-text">I am a self Taught html 5 and css3,I love building Responsive web pages and I have a very good Experience with this scripting language and I have been using it  for years.
-                                   </p>
-                              </div>
-                         </div> 
-                      </div>
-                    </div>
-                    <div class="row pr-3 pt-1 pl-3 pb-2">
-                      <div class="skill-set col-lg-3 col-md-3 col-sm-6 pt-3" style="border-radius: 5px;"> 
-                              <img class="card-img-top" src="img/bootstrap.png" alt="Card image cap" style="border-radius: 50%;">
-                              <div class="card-body">
-                                   <h5 class="card-title">Bootstrap</h5>
-                                   <p class="card-text">Bootstrap framework has added life to my webpages and with Bootsrap 4 I make sure my webpages look beautiful on all Screen Sizes.</p>      
-                             </div>
-                        </div>
-                        <div class="skill-set col-lg-3 col-md-3 col-sm-6 pt-3" style="border-radius: 5px;"> 
-                          <img class="card-img-top" src="img/GitHub-Mark.png" alt="Card image cap" style="border-radius: 50%;">
-                          <div class="card-body">
-                            <h5 class="card-title">Github </h5>
-                            <p class="card-text">I have also started using Github and its a great tool to manage the versions of our code and collaborate with other developers.</p>
-                          </div>                  
-                    </div>
-                      <div class="skill-set col-lg-3 col-md-3 col-sm-6 pt-3" style="border-radius: 5px;"> 
-                          <img class="card-img-top" src="img/corona.png" alt="Card image cap" style="border-radius: 50%;">
-                          <div class="card-body">
-                            <h5 class="card-title">Corona Sdk </h5>
-                            <p class="card-text">I have also jumped into Game Development using Corona Sdk which is a great Cross platform framework to build games for mobiles and Desktops,I am still working on my first mobile game and  will be finishing it in couple of months.
-                            </p>
-                          </div>
-                      </div>
-                      <div class="skill-set col-lg-3 col-md-3 col-sm-6 pt-3" style="border-radius: 5px;"> 
-                          <img class="card-img-top" src="img/firebase.png" alt="Card image cap" style="border-radius: 50%;">
-                          <div class="card-body">
-                            <h5 class="card-title">FireBase Platform </h5>
-                            <p class="card-text">I am quite well familiar with firebase platform for small applications that helps us quickly build and deploy our app on the cloud without worrying about the backend.
-                            </p>
-                          </div>
-                      </div>
-                </div>
-                <p id="letsconnect"> </p>
-                <div class="card mb-2 pb-3 mt-2" style="border-radius: 5px;"> 
-                    <div class="bg-dark mb-3 pl-3" style="display: flex;align-items: center; height: 60px">
-                            <h2 class="icons  text-light">Lets Connect</h2> 
-                        </div>  
-                    <div class="icons text-center">     
-                         <ul class="list-inline list-social-icons ml-2 mb-0">
-                               
-                             <li class="list-inline-item">
-                                 <a href="https://fb.com/maheshmnj" title="facebook">
-                                 <span class="fa-stack fa-lg">
-                                 <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                 </span>
-                                 </a>
-                             </li>
-                             <li class="list-inline-item">
-                                 <a href="https://twitter.com/maheshmnj" title="twitter">
-                                 <span class="fa-stack fa-lg">
-                                  <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                  </span>
-                                 </a>
-                             </li>
-                             <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/maheshjamdade/" title="linkedin">
-                                <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a href="https://medium.com/@maheshjamdade" title="Medium">
-                              <span class="fa-stack fa-lg">
-                              <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                              <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-                              </span>
-                              </a>
-                            </li>    
-                            <li class="list-inline-item">
-                                <a href="https://github.com/maheshmnj/" title="github">
-                                <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a href="https://www.quora.com/profile/Mahesh-Jamdade-4" title="quora">
-                              <span class="fa-stack fa-lg">
-                              <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                              <i class="fa fa-quora fa-stack-1x fa-inverse"></i>
-                              </span>
-                              </a>
-                          </li>
-                        </ul>       
-                 </div>      <!-- end of head+icons -->
-                        <form id="connect-form" method="POST">
-                            <div class="row">
-                                <div class="card-body col-lg-6 col-sm-12  col-md-6">
-                                    <div class="md-form mt-3">
-                                        <input type="text" id="name" class="form-control">
-                                        <label for="materialContactFormName">Name</label>
-                                    </div>
-                                    <div class="md-form mb-3" placeholder="Email">
-                                        <input type="text" class="form-control mb-3" id="email">
-                                        <label for="email">Email</label>
-                                    </div>
-                                    <div class="md-form mb-3" placeholder="Subject">
-                                        <input type="text" class="form-control mb-3"  id="subject">
-                                        <label for="subject">Subject</label>
-                                    </div>        
-                                </div>
-                                <div class="card-body col-lg-6 mt-2 col-sm-12 col-md-6">  
-                                    <div class="md-form">    
-                                        <textarea class="form-control md-textarea" name="message" rows="4" id="message" 
-                                         placeholder="say Hi, and I will probably get back to you in 24 hrs :)" style="resize: none; width: 100%; box-sizing: border-box; height: 100%;"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>      
-                            </div> 
-                            <div class="form-action" style="text-align: center;margin: auto" >
-                                    <button onclick="contactuser()" class="btn btn-elegant btn-block" type="button" style="height: 50px;width: 50%;" >Submit</button>
-                                </div>
-                          <script type="text/javascript" src="js/firebase.js"></script>    
-                        </form> 
-                </div>
-        <footer class="card bg-dark mb-2" style="height: 150px">
-          <div style="padding:20px; color: white; position: relative; top: 10%; text-align: center; ">
-            Source Code for this Web Page is Available at <a href="https://Github.com/maheshmnj/maheshmnj.github.io" style="color: cyan; text-decoration: none;">Github.com</a>
-          <a href="include/Mahesh_Resume.pdf" target="_blank"><button type="button" class="btn btn-rounded" id="resbutton" style="background-image: linear-gradient(to right, blue , purple); color: white; border-radius: 10px; float:none; ">View Resume</button></a>
+    <div class="typewriter mt-lg-3 pt-5 justify-content-center col-lg-10 offset-lg-1 d-flex align-items-center">
+      <p id="introtext"></p>
+      <script>
+        var i = 0;
+        var txt = '"Hi, My Name is Mahesh,I am an Under Grad self Learner,Tech enthusiast,Software developer,Programmer.I build mobile and web applications for personal and commercial use,I love building stuffs, Travelling places,meeting new people and developing new Skills"';
+        var speed = 52;
+        typeWriter()
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("introtext").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+      </script>
+    </div>
+    <div class="card mt-4 mb-2 pb-1 bg-light" id="projects">
+      <h1 class="bg-dark text-light pb-2 pl-3">Projects</h1>
+      <div class="project">
+        <div class="row pr-3 pl-3">
+          <div class=" card project-content pt-2 col-lg-6 col-md-6 col-sm-12" style="text-align: justify">
+            <a
+              href="https://photos.google.com/share/AF1QipNaBFGZzQhmGWt4PvZlPzhEOXpQCRTDx-Ti8ZxpTyfSRs4cTaSjYBe1NeRQNtzFgQ?key=MnRON1czR2tBSEY1UVUxS18yVzdScFR0d0R6aTNR">
+              <h3 class="mb-0">School Software</h3>
+              <h5>Desktop Application</h5>
+              <p style="font-family:Raleway,helvlight,arial;font-size:18px; ">
+                <a href="https://saurabh47.github.io">My friend</a> and I developed a school software, which can
+                generate a photocopy of Transfer Certificate,Bonafide, and any type of official document,We have built
+                this software using the javafx library.to make this software look rich and premium we have made use of
+                the jfoenix library.JFoenix is an open source java library, that implements Google Material Design using
+                java components.you can take a look at <a href="https://photos.app.goo.gl/pBdQjAy2eu7VJwVX8">couple of
+                  shots of the software here</a>.
+              </p>
+            </a>
           </div>
-        </footer>          
-         <!-- Bootstrap core JavaScript -->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-            <!-- MDB CORE JAVASCRIPT -->
-            <script type="text/javascript" src="js/mdb.min.js"></script>
-            <!-- Plugin JavaScript -->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-        
-    </body>
-    </html>
+          <a href="https://github.com/TamtePrathamesh/SWWN">
+            <div class=" card project-content pt-2 col-lg-6 col-md-6 col-sm-12" style="text-align: justify">
+              <h3 class="mb-0">SWWN</h3>
+              <h5>Android App</h5>
+              <p style="font-family: Raleway,helvlight,arial;font-size:18px;">
+                I had an oportunity to work as an intern at <a href="http://handsintechnology.com/"> Hands in
+                  Technology</a> Mumbai. We were a team of three passionate people and we worked on a development of an
+                Android App for an ecommerce firm which sells cosmetics.<br>It was a great Experience to learn about the
+                Environment in a IT Sector and to Learn from the Real Time Developers.
+              </p>
+            </div>
+          </a>
+          <div class="card project-content mt-2 col-lg-6 col-md-6 col-sm-12" style="text-align: justify">
+            <a href="https://github.com/maheshmnj/Project-Uber-Auto">
+              <h3 class="mb-0">Project Uber Auto</h3>
+              <h5>Android Application</h5>
+            </a>
+            <p style="font-family:Raleway,helvlight,arial;font-size:18px; ">
+              This is My College Project with an intention to build a Similar mobile application like Uber for Local
+              Auto Rickshaws in the Town,This is built purely using Android Studio and FireStore in the Backend.
+            </p>
+          </div>
+          <div class="card project-content mt-2 col-lg-6 col-md-6 col-sm-12" style="text-align: justify">
+            <a href="#">
+              <h3 class="mb-0">Web Scraping</h3>
+              <h5>To scrap results from the University Web page and notify to students</h5>
+            </a>
+            <h2>Still working on it,Will be Updated SOON</h2>
+          </div>
+          <div class="card project-content mt-2 col-12 pt-3 pb-3 mb-2" style="text-align: center;">
+            <a href="https://github.com/maheshmnj">
+              <h3 id="skills">Other Projects I am working on...</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h1 class=" bg-dark text-light p-2">Skills</h1>
+        <div class="row pr-3 pl-3" style="display: flex;justify-content: space-around">
+          <div class="skill-set col-lg-3 col-md-3 col-sm-6 col-xs-6 pt-3" style="border-radius: 5px;">
+            <img class="card-img-top" src="img/java-logo.png" alt="Card image cap" style="border-radius: 50%;">
+            <div class="card-body">
+              <h5 class="card-title">Java </h5>
+              <p class="card-text">Java has been really fascinating me since I started learning it, I have developed
+                enough skills to develop desktop applications,and I have developed a standalone desktop GUI
+                Applications using JavaFX from scratch and also familiar with java Database connectivity(JDBC).
+              </p>
+            </div>
+          </div>
+          <div class="skill-set col-lg-3 col-md-3 col-sm-6 col-xs-6 pt-3" style="border-radius: 5px;">
+            <img class="card-img-top" src="img/python.png" alt="Card image cap" style="border-radius: 50%;">
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">I am quite well familiar to python after having studied various basic programming
+                languages like c and c++,after exploring some apis,I have built a Telegram bot in python
+                3,and One of my recent final year Project was also done in python you can find the source of all my projects on Github
+              </p>
+            </div>
+          </div>
+          <div class="skill-set col-lg-3 col-md-3 col-sm-6 col-xs-6 pt-3" style="border-radius: 5px;">
+            <img class="card-img-top" src="img/c++.png" alt="Card image cap" style="border-radius: 50%;">
+            <div class="card-body">
+              <h5 class="card-title">C++</h5>
+              <p class="card-text">C and C++ have been a great way to start coding and basically C was my first
+                programming language when I first ran "Hello World",And these languages helped me build some good
+                understanding of data structures and How codes actually do the magic."
+              </p>
+            </div>
+          </div>
+        </div>
+        <h2 class="bg-dark text-light pl-3 mt-2 pt-2 pb-2">Web Development</h2>
+        <div class="row pr-3 pt-1 pl-3 pb-3" style="display: flex;justify-content: space-around">
+          <div class="skill-set col-lg-3 col-md-3 col-sm-6 pt-3" style="border-radius: 5px;">
+            <img class="card-img-top" src="img/javascript_logo.png" alt="Card image cap" style="border-radius: 50%;">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript</h5>
+              <p class="card-text">I have learnt enough Java Script for frontend and completed a Freecodecamp Javascript Algorithm and Data
+                  Structure Certification (300hrs) and look forward to exploring frameworks of Javascript .</p>
+            </div>
+          </div>
+          <div class="skill-set col-lg-3 col-md-3 col-sm-6 pt-3" style="border-radius: 5px;">
+            <img class="card-img-top" src="img/html-css.png" alt="Card image cap" style="border-radius: 50%;">
+            <div class="card-body">
+              <h5 class="card-title">HTML 5 & CSS3 </h5>
+              <p class="card-text">I am well familiar with html 5 and css3,and have a
+                very good experience using this markup language and infact this portfolio is built from scratch with html5 and css3 along with bootstarp with little tweaks.
+              </p>
+            </div>
+          </div>
+          <div class="skill-set col-lg-3 col-md-3 col-sm-6 pt-3" style="border-radius: 5px;">
+            <img class="card-img-top" src="img/bootstrap.png" alt="Card image cap" style="border-radius: 50%;">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap</h5>
+              <p class="card-text">Bootstrap framework has added life to my webpages and with Bootsrap 4 I make sure my
+                webpages look beautiful on all Screen Sizes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row ml-1 mr-1" style="text-align: center">
+          <div class="card col-lg-6 col-12 p-2">
+            <h2 class="bg-dark text-light p-2">Mobile Development</h2>
+            <div class="row pr-3 mt-1 pt-1 pl-3 pb-2" style="display:flex;justify-content: space-around">
+              <div class="skill-set col-lg-5 col-md-6 col-sm-6 col-xs-6 pt-3" style="border-radius: 5px;">
+                <img class="card-img-top" src="img/android.png" alt="Card image cap" style="border-radius: 50%;">
+                <div class="card-body">
+                  <h5 class="card-title">Android</h5>
+                  <p class="card-text">My basics of JAVA helped me to understand and get used to Android
+                    Environment in
+                    a jiffy,I am more comfortable during the UI development process when it comes to designing the
+                    layouts
+                    and
+                    pages and I make sure the layouts suite the best on all screen sizes.</p>
+                </div>
+              </div>
+              <div class="skill-set col-lg-5 col-md-6 col-sm-6 col-xs-6 pt-3" style="border-radius: 5px;">
+                <img class="card-img-top" src="img/flutter.png" alt="Card image cap" style="border-radius: 50%;">
+                <div class="card-body">
+                  <h5 class="card-title">Flutter</h5>
+                  <p class="card-text">One of My best decisions had been getting early into Flutter and fall in love
+                    with this framework,Its really Inspiring to see How fast the Flutter community is growing and so is
+                    Flutter across different platforms and Devices.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-lg-6 col-12 p-2">
+            <h2 class="bg-dark text-light p-2">Other Tools</h2>
+            <div class="row pr-3 mt-2 pt-1 pl-3 pb-2" style="display:flex;justify-content: space-around">
+              <div class="skill-set col-5 pt-3" style="border-radius: 5px;">
+                <img class="card-img-top" src="img/GitHub-Mark.png" alt="Card image cap" style="border-radius: 50%;">
+                <div class="card-body">
+                  <h5 class="card-title">Github </h5>
+                  <p class="card-text">When it comes to staying synchronized and collaborate with other developers I
+                    prefer Github.</p>
+                </div>
+              </div>
+              <div class="skill-set col-5 pt-3" style="border-radius: 5px;">
+                <img class="card-img-top" src="img/firebase.png" alt="Card image cap" style="border-radius: 50%;">
+                <div class="card-body">
+                  <h5 class="card-title">FireBase Platform </h5>
+                  <p class="card-text">I am quite well familiar with firebase platform for small applications that helps
+                    us
+                    quickly build and deploy our app on the cloud without worrying about the backend.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p id="letsconnect"> </p>
+        <div class="card mb-2 pb-3" style="border-radius: 5px;">
+          <div class="bg-dark mb-3 pl-3" style="display: flex;align-items: center; height: 60px">
+            <h2 class="icons  text-light">Lets Connect</h2>
+          </div>
+          <div class="icons text-center">
+            <ul class="list-inline list-social-icons ml-2 mb-0">
+
+              <li class="list-inline-item">
+                <a href="https://fb.com/maheshmnj" title="facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x text-dark"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/maheshmnj" title="twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x text-dark"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/maheshjamdade/" title="linkedin">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x text-dark"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://medium.com/@maheshjamdade" title="Medium">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x text-dark"></i>
+                    <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/maheshmnj/" title="github">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x text-dark"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.quora.com/profile/Mahesh-Jamdade-4" title="quora">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x text-dark"></i>
+                    <i class="fa fa-quora fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div> <!-- end of head+icons -->
+          <form id="connect-form" method="POST">
+            <div class="row pl-2">
+              <div class="card-body col-lg-6 col-sm-12  col-md-6">
+                <div class="md-form mt-3">
+                  <input type="text" id="name" class="form-control">
+                  <label for="materialContactFormName">Name</label>
+                </div>
+                <div class="md-form mb-3" placeholder="Email">
+                  <input type="text" class="form-control mb-3" id="email">
+                  <label for="email">Email</label>
+                </div>
+                <div class="md-form mb-3" placeholder="Subject">
+                  <input type="text" class="form-control mb-3" id="subject">
+                  <label for="subject">Subject</label>
+                </div>
+              </div>
+              <div class="card-body col-lg-6 mt-2 col-sm-12 col-md-6">
+                <div class="md-form">
+                  <textarea class="form-control md-textarea" name="message" rows="4" id="message"
+                    placeholder="Leave a Message, and I will probably get back to you in 24 hrs :)"
+                    style="resize: none; width: 100%; box-sizing: border-box; height: 100%;"></textarea>
+                  <label for="message">Message</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-action" style="text-align: center;margin: auto">
+              <button onclick="contactuser()" class="btn btn-elegant btn-block" type="button"
+                style="height: 50px;width: 50%;">Submit</button>
+            </div>
+            <script type="text/javascript" src="js/firebase.js"></script>
+          </form>
+        </div>
+        <footer class="card bg-dark" style="height: 150px">
+          <div style="padding:20px; color: white; position: relative; top: 10%; text-align: center; ">
+            Source Code for this Web Page is Available at <a href="https://Github.com/maheshmnj/maheshmnj.github.io"
+              style="color: cyan; text-decoration: none;">Github.com</a>
+            <a href="include/Mahesh_Resume.pdf" target="_blank"><button type="button" class="btn btn-rounded"
+                id="resbutton"
+                style="background-image: linear-gradient(to right, blue , purple); color: white; border-radius: 10px; float:none; ">View
+                Resume</button></a>
+          </div>
+        </footer>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- MDB CORE JAVASCRIPT -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+</body>
+
+</html>
