@@ -61,9 +61,80 @@ color:green !important;
   vertical-align: middle;
 }
 
+.stackIcon{
+  background-image: url('../img/stack.png');
+  background-repeat: no-repeat;
+  background-color: darkgrey;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
 .project a:hover{
   color: red;
 }
+.twitterprofilecard{
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+.twitterpb a:hover .twitterprofilecard{
+  visibility: visible;
+}
+
+.fbprofilecard{
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+.facebookpb a:hover .fbprofilecard{
+  visibility: visible;
+}
+.githubprofilecard{
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+.githubpb a:hover .githubprofilecard{
+  visibility: visible;
+}
+
+.mediumpb a:hover .mediumprofilecard{
+  visibility: visible;
+}
+
+.mediumprofilecard{
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.stackOverflowpb a:hover .stackOverflowprofilecard{
+visibility: visible;
+}
+.stackOverflowprofilecard{
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+.quorapb a:hover .quoraprofilecard{
+  visibility: visible;
+} 
+
+.quoraprofilecard{
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+.linkedinpb a:hover .linkedinprofilecard{
+  visibility: visible
+}
+.linkedinprofilecard{
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
 
 #intro .row{
   max-height: 600px;
@@ -71,7 +142,6 @@ color:green !important;
   
   .mb-0 p{
   font-size: 30px;
-  
   }
   
   .list-social-icons a {
