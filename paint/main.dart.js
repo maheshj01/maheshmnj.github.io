@@ -33588,7 +33588,7 @@ a.iq(0,new P.x(0,0,0+b.a/2,0+b.b/2),0.175,0.349,!1,r)},
 ex:function(a){return!0}}
 F.BC.prototype={
 M:function(a,b){var s=null
-return new T.qb(new Y.oO(new F.RK(),s,s,s,F.aoi(),T.anF(),t.qN),s,s,new S.rF(new R.va(s),"Flutter Demo",X.aaO(s,C.mP,X.ab_()),!1,s),s,t.hF)}}
+return new T.qb(new Y.oO(new F.RK(),s,s,s,F.aoi(),T.anF(),t.qN),s,s,new S.rF(new R.va(s),"Flutter Canvas",X.aaO(s,C.mP,X.ab_()),!1,s),s,t.hF)}}
 F.RK.prototype={
 $1:function(a){return new L.cZ(null,null,H.b([],t.A8),new P.bf(t.V))},
 $S:126}
