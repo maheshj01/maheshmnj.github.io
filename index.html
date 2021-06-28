@@ -124,6 +124,8 @@
                 }
             </script>
         </div>
+        
+        <div id="journeyContent" style="width: 500px;"></div>
         <div class="card mt-4 mb-2 pb-1 bg-light" id="projects">
             <h1 class="bg-dark text-light pb-2 pl-3">Projects</h1>
             <div class="project">
@@ -192,43 +194,6 @@
             </div>
 
             <div class="card">
-                <!-- <h1 class=" bg-dark text-light p-2">Skills</h1> -->
-                <!-- <div class="row pr-3 pl-3" style="display: flex;justify-content: space-around">
-                    <div class="skill-set col-lg-3 col-md-3 col-sm-6 col-xs-6 pt-3" style="border-radius: 5px;">
-                        <img class="card-img-top" src="img/java-logo.png" alt="Card image cap"
-                            style="border-radius: 50%;">
-                        <div class="card-body">
-                            <h5 class="card-title">Java </h5>
-                            <p class="card-text">Java has been really fascinating me since I started learning it, I have
-                                developed enough skills to develop desktop applications,and I have developed a
-                                standalone desktop GUI Applications using JavaFX from scratch and also familiar
-                                with java Database connectivity(JDBC).
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill-set col-lg-3 col-md-3 col-sm-6 col-xs-6 pt-3" style="border-radius: 5px;">
-                        <img class="card-img-top" src="img/python.png" alt="Card image cap" style="border-radius: 50%;">
-                        <div class="card-body">
-                            <h5 class="card-title">Python</h5>
-                            <p class="card-text">I am quite well familiar to python after having studied various basic
-                                programming languages like c and c++,after exploring some apis,I have built a Telegram
-                                bot in python 3,and One of my recent final year Project was also done
-                                in python you can find the source of all my projects on Github
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill-set col-lg-3 col-md-3 col-sm-6 col-xs-6 pt-3" style="border-radius: 5px;">
-                        <img class="card-img-top" src="img/c++.png" alt="Card image cap" style="border-radius: 50%;">
-                        <div class="card-body">
-                            <h5 class="card-title">C++</h5>
-                            <p class="card-text">C and C++ have been a great way to start coding and basically C was my
-                                first programming language when I first ran "Hello World",And these languages helped me
-                                build some good understanding of data structures and How codes actually
-                                do the magic."
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
                 <h2 class="bg-dark text-light pl-3 mt-2 pt-2 pb-2">Web Development</h2>
                 <div class="row pr-3 pt-1 pl-3 pb-3" style="display: flex;justify-content: space-around">
                     <div class="skill-set col-lg-3 col-md-3 col-sm-6 pt-3" style="border-radius: 5px;">
@@ -462,6 +427,12 @@
                 <!-- Plugin JavaScript -->
                 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+                <script>
+                    // $(document).ready( function() {
+                    //         $("#journeyContent").load("journey.html");
+                    // });
+                    document.getElementById("journeyContent").innerHTML='<object type="text/html" data="journey.html" ></object>';
+                    </script>
 </body>
 
 </html>
