@@ -20,10 +20,11 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="flutter_application_new">
+  <meta name="apple-mobile-web-app-title" content="counter_app">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <title>flutter_application_new</title>
+  <title>counter_app</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/eruda/2.4.1/eruda.min.js" integrity="sha512-RrQDQUon0OiQVjKQYkMuhtLgx8R/4niagIVdHltxcAJa1+cc8FJFFOhtLuK3YJAoo5mdfAFh98ZQwbDKJgFIpg==" crossorigin="anonymous"></script>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -31,7 +32,7 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '1184388887';
+    var serviceWorkerVersion = '514509939';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -93,6 +94,9 @@
       // Service workers not supported. Just drop the <script> tag.
       loadMainDartJs();
     }
+  </script>
+   <script>
+    eruda.init();
   </script>
 </body>
 </html>
