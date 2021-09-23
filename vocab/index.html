@@ -17,6 +17,7 @@
 
   <title>Vocabhub</title>
   <link rel="manifest" href="manifest.json">
+  <meta name="google-signin-client_id" content="726058956773-msrin6hk3hafdabcgtceecmn6mravg77.apps.googleusercontent.com">
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -46,13 +47,13 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/amcharts/3.21.15/plugins/export/libs/FileSaver.js/FileSaver.min.js"></script> 
 <!-- Initialize Firebase -->
 <script src="https://www.gstatic.com/firebasejs/8.6.1/init.js"></script>
  <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=3177283389');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1404522133');
       });
     }
   </script>
