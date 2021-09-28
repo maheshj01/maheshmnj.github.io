@@ -3,20 +3,21 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "version.json": "6dfd72fd9ccb1fc58316280aa457bbfc",
-"index.html": "ee8cc1db5cdb57f4cd774aab9170f2cc",
-"/": "ee8cc1db5cdb57f4cd774aab9170f2cc",
-"main.dart.js": "2529994db02cb0087d353c64972d570a",
+  "version.json": "044806405b0b52cb00c1f1332a285ac5",
+"index.html": "bc02851d223197faf9034953d31ac460",
+"/": "bc02851d223197faf9034953d31ac460",
+"main.dart.js": "5b42515806f4b1b88bca15eb3cb34189",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
+"icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
+"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"manifest.json": "7bf13c864c310ebf299ff634d2709b76",
-"assets/AssetManifest.json": "0d266ffbe90dae02458487c9d33b7373",
-"assets/NOTICES": "7e808feb6f7c142a78753211e76a492b",
+"manifest.json": "f6cb4846f01ceeabf13936459cb3ded0",
+"assets/AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
+"assets/NOTICES": "515863b0d708d8deeba04e0426dd5d9e",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
-"assets/packages/flutter_markdown/assets/logo.png": "67642a0b80f3d50277c44cde8f450e50",
-"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac"
+"assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -34,7 +35,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
