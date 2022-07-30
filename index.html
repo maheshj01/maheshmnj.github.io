@@ -288,63 +288,53 @@
                         <h2 class="icons  text-light">Lets Connect</h2>
                     </div>
                     <div class="icons text-center">
-                        <ul class="list-inline list-social-icons ml-2 mb-0">
-
-                            <li class="facebookpb list-inline-item">
-                                <a href="https://fb.com/maheshmnj" title="facebook" target="_blank">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="twitterpb list-inline-item">
-                                <a href="https://twitter.com/maheshmnj" title="twitter" target="_blank">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="linkedinpb list-inline-item">
-                                <a href="https://www.linkedin.com/in/maheshjamdade/" title="linkedin" target="_blank">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="mediumpb list-inline-item">
-                                <a href="https://medium.com/@maheshmnj" title="Medium" target="_blank">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                                        <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="stackOverflowpb list-inline-item">
-                                <a href="https://stackoverflow.com/users/story/8253662" title="StackOverflow" target="_blank">
-                                    <span class="stackIcon bg-dark fa-stack fa-md">
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="githubpb list-inline-item">
-                                <a href="https://github.com/maheshmnj/" title="github" target="_blank">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="quorapb list-inline-item">
-                                <a href="https://www.quora.com/profile/Mahesh-Jamdade-4" title="quora" target="_blank">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                                        <i class="fa fa-quora fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
+                        <div id="iconsContainer"></div>
+                        <script>
+                            var urls = [
+                                "https://fb.com/maheshmnj",
+                                "https://twitter.com/maheshmnj",
+                                "https://www.linkedin.com/in/maheshjamdade/",
+                                "https://maheshmnj.medium.com/",
+                                "https://stackoverflow.com/users/8253662/mahesh-jamdade",
+                                "https://github.com/maheshmnj/",
+                                "https://www.quora.com/profile/Mahesh-Jamdade-4"
+                            ];
+                            var titles = [
+                                'facebook',
+                                'twitter',
+                                'linkedin',
+                                'medium',
+                                'stackoverflow',
+                                'github',
+                                'quora'
+                            ];
+                            var str = '<ul class="list-inline list-social-icons ml-2 mb-0">'
+                                for(let i in titles){
+                                    if(titles[i]=='stackoverflow'){
+                                        str += `<li class="stackOverflowpb list-inline-item">
+                                            <a href="${urls[i]}" title="StackOverflow" target="_blank">
+                                                <span class="stackIcon bg-dark fa-stack fa-md">
+                                                </span>
+                                            </a>
+                                        </li>
+                                        `
+                                    }
+                                    else{
+                                        str += 
+                                        `<li class="list-inline-item">
+                                                <a href= ${urls[i]} title="${titles[i]}" target="_blank">
+                                                    <span class="fa-stack fa-lg">
+                                                        <i class="fa fa-circle fa-stack-2x text-dark"></i>
+                                                        <i class="fa fa-${titles[i]} fa-stack-1x fa-inverse"></i>
+                                                    </span>
+                                                </a>
+                                        </li>
+                                        `
+                                    }
+                                }
+                                str += '</ul>';
+                                document.getElementById("iconsContainer").innerHTML = str;
+                        </script>
                     </div>
                     <!-- end of head+icons -->
                     <form id="connect-form" method="POST">
