@@ -38,8 +38,10 @@
     <link href="css/mdb.min.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
-        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <link
         href="https://fonts.googleapis.com/css?family=Bad+Script|Cabin+Condensed|Dancing+Script|Indie+Flower|PT+Sans|Biryani|Raleway"
@@ -56,15 +58,15 @@
 <body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
-        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
     <!--     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script> -->
     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
@@ -95,6 +97,7 @@
             </ul>
         </div>
     </nav>
+
     <div class="container-fluid">
         <div class="row bg-dark mt-5 pt-5 pb-4" id="about">
             <div class="picture col-lg-6 col-sm-12 image text-center text-lg-left pl-lg-5">
@@ -123,78 +126,51 @@
                 }
             </script>
         </div>
-        
-        <!-- <div id="journeyContent" style="width: 500px;"></div> -->
-        <div class="card mt-4 mb-2 pb-1 bg-light" id="projects">
-            <h1 class="bg-dark text-light pb-2 pl-3">Projects</h1>
-            <div class="project">
-                <div class="row pr-3 pl-3">
-                    <div class=" card project-content pt-2 col-lg-6 col-md-6 col-sm-12 col-xs-12"
-                        style="text-align: justify">
-                        <a
-                            href="https://photos.google.com/share/AF1QipNaBFGZzQhmGWt4PvZlPzhEOXpQCRTDx-Ti8ZxpTyfSRs4cTaSjYBe1NeRQNtzFgQ?key=MnRON1czR2tBSEY1UVUxS18yVzdScFR0d0R6aTNR">
-                            <h3 class="mb-0">School Software</h3>
-                            <h5>Web Application</h5>
-                            <p style="font-family:Raleway,helvlight,arial;font-size:18px; ">
-                                <a href="https://saurabh47.github.io">My friend</a> and I developed a school software,
-                                which can generate a photocopy of Transfer Certificate,Bonafide, and any type of
-                                official document,We have built this software using
-                                the javafx library.to make this software look rich and premium we have made use of the
-                                jfoenix library.JFoenix is an open source java library, that implements Google Material
-                                Design using java components.you can take a
-                                look at <a href="https://photos.app.goo.gl/pBdQjAy2eu7VJwVX8">couple of
-                                    shots of the software here</a>.
-                            </p>
-                        </a>
-                    </div>
-                    <a href="https://github.com/TamtePrathamesh/SWWN">
-                        <div class=" card project-content pt-2 col-lg-6 col-md-6 col-sm-12 col-xs-12"
-                            style="text-align: justify">
-                            <h3 class="mb-0">SWWN</h3>
-                            <h5>Android App</h5>
-                            <p style="font-family: Raleway,helvlight,arial;font-size:18px;">
-                                I had an oportunity to work as an intern at <a href="http://handsintechnology.com/">
-                                    Hands in
-                                    Technology</a> Mumbai. We were a team of three passionate people and we worked on a
-                                development of an Android App for an ecommerce firm which sells cosmetics.<br>It was a
-                                great Experience to learn about the Environment in a IT Sector
-                                and to Learn from the Real Time Developers.
-                            </p>
-                        </div>
-                    </a>
-                    <div class="card project-content mt-2 col-lg-6 col-md-6 col-sm-12 col-xs-12"
-                        style="text-align: justify">
-                        <a href="https://github.com/maheshmnj/Project-Uber-Auto">
-                            <h3 class="mb-0">Project Uber Auto</h3>
-                            <h5>Android Application</h5>
-                        </a>
-                        <p style="font-family:Raleway,helvlight,arial;font-size:18px; ">
-                            This is My College Project with an intention to build a Similar mobile application like Uber
-                            for Local Auto Rickshaws in the Town,This is built purely using Native Android  and FireStore
-                            in the Backend.
-                        </p>
-                    </div>
-                    <div class="card project-content mt-2 col-lg-6 col-md-6 col-sm-12 cl-xs-12"
-                        style="text-align: justify">
-                        <a href="#">
-                            <h3 class="mb-0">Web Scraping</h3>
-                            <h5>To scrap results from the University Web page and notify to students</h5>
-                        </a>
-                        <p  style="font-family:Raleway,helvlight,arial;font-size:18px;">This is my final Semester Project that helps students get notified whenever the University results are out to get this working you need 
-                            to once register on our portal and our program will do the rest of the Job,this project is built using python in the backend and web portal using html css in the front end.
-                        </p>
-                    </div>
-                    <div class="card project-content mt-2 col-12 pt-3 pb-3 mb-2" style="text-align: center;">
-                        <a href="https://github.com/maheshmnj">
-                            <h3 id="skills">Other Projects I am working on...</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    </div>
 
-            <div class="card">
-                <h2 class="bg-dark text-light pl-3 mt-2 pt-2 pb-2">Web Development</h2>
-                <div class="row pr-3 pt-1 pl-3 pb-3" style="display: flex;justify-content: space-around">
+    <!-- <div id="journeyContent" style="width: 500px;"></div> -->
+    <!-- <div class="card mt-4 mb-2 pb-1 bg-light" id="projects"> -->
+        <h1 class="bg-dark text-light pb-2 pl-3">Projects</h1>       
+          <!-- <div  id="carouselExampleIndicators" class="carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" id="buildProjects" style="height: 50vh"" >
+              <script src="js/src/data.js" type="text/javascript"></script>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div> -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-touch="true" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner" id="buildProjects">
+                <script src="js/src/data.js" type="text/javascript"></script>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <div class="card">
+        <h2 class="bg-dark text-light pl-3 mt-2 pt-2 pb-2">Web Development</h2>
+        <div class="row p-3" style="display: flex;justify-content: space-around">
                     <div class="skill-set col-lg-3 col-md-3 col-sm-6 pt-3" style="border-radius: 5px;">
                         <img class="card-img-top" src="img/javascript_logo.png" alt="Card image cap"
                             style="border-radius: 50%;">
@@ -224,8 +200,8 @@
                                 make sure my webpages look beautiful on all Screen Sizes.</p>
                         </div>
                     </div>
-                </div>
-
+        </div>
+        </div>
                 <div class="row ml-1 mr-1" style="text-align: center">
                     <div class="card col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2">
                         <h2 class="bg-dark text-light p-2">Mobile Development</h2>
@@ -281,9 +257,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <p id="letsconnect"> </p>
-                <div class="card mb-2 pb-3" style="border-radius: 5px;">
+        </div>
+
+    <p id="letsconnect"> </p>
+    <div class="card mb-2 pb-3" style="border-radius: 5px;">
                     <div class="bg-dark mb-3 pl-3" style="display: flex;align-items: center; height: 60px">
                         <h2 class="icons  text-light">Lets Connect</h2>
                     </div>
@@ -320,7 +297,7 @@
                                         `
                                     }
                                     else{
-                                        str += 
+                                        str +=
                                         `<li class="list-inline-item">
                                                 <a href= ${urls[i]} title="${titles[i]}" target="_blank">
                                                     <span class="fa-stack fa-lg">
@@ -368,9 +345,10 @@
                         </div>
                         <script type="text/javascript" src="js/firebase.js"></script>
                     </form>
-                </div>
-                <footer class="card bg-dark" style="height: 150px">
-                    <div style="padding:20px; color: white; position: relative; top: 10%; text-align: center; ">
+    </div>
+
+    <footer class="card bg-dark" style="height: 150px">
+        <div style="padding:20px; color: white; position: relative; top: 10%; text-align: center; ">
                         Source Code for this Portfolio is Available at <a
                             href="https://Github.com/maheshmnj/maheshmnj.github.io"
                             style="color: cyan; text-decoration: none;">https://github.com/maheshmnj</a>
@@ -378,22 +356,16 @@
                                 class="btn btn-rounded" id="resbutton"
                                 style="background-image: linear-gradient(to right, blue , purple); color: white; border-radius: 10px; float:none; ">View
                                 Resume</button></a>
-                    </div>
-                </footer>
-                <!-- Bootstrap core JavaScript -->
-                <script src="vendor/jquery/jquery.min.js"></script>
-                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-                <!-- MDB CORE JAVASCRIPT -->
-                <script type="text/javascript" src="js/mdb.min.js"></script>
-                <!-- Plugin JavaScript -->
-                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        </div>
+    </footer>
 
-                <!-- <script>
-                    // $(document).ready( function() {
-                    //         $("#journeyContent").load("journey.html");
-                    // });
-                    document.getElementById("journeyContent").innerHTML='<object type="text/html" data="journey.html" ></object>';
-                    </script> -->
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- MDB CORE JAVASCRIPT -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 </body>
 
 </html>

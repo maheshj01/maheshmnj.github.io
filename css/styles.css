@@ -159,3 +159,15 @@ nav li a:hover {
         display: none;
     }
 }
+/* .project-content{
+    background-color: #456482 ;
+}
+.carousel-control-prev{
+    color: rgb(243, 0, 0);
+    accent-color: rgb(243, 0, 0);
+}*/
+
+.carousel-indicators{
+    color: #000;
+    
+} 
