@@ -18,7 +18,6 @@ var jsonData = [
         <li>Support Keyboard shortcuts</li>
         <li>Download Canvas output to Image</li>
         <li>Precisely Zoom to any corner of the canvas</li>
-        <li>and more...</li>
         </ul>`
         
     },
@@ -57,10 +56,10 @@ function buildProjects(){
                         </p>
                     </div>
                     <div>
-                    <button class="btn btn-default appbtn" onclick=" window.open('${item["app_url"]}','_blank')">Try the app</button>
                     <button class="btn btn-default appbtn" onclick=" window.open('${item["source"]}','_blank')">
-                        <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/github.svg" height="24">
+                    <img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/github.svg" height="24">
                     </button>
+                    <button style="visibility: ${item["app_url"]==""?"hidden":"visible"}" class="btn btn-default appbtn" onclick="window.open('${item["app_url"]}','_blank')">Try the app</button>
                     </div>
                 </div>
               </div>
