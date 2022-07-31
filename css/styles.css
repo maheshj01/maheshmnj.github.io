@@ -92,6 +92,13 @@ nav li a:hover {
 .list-social-icons a:hover {
     color: #4286f4;
 }
+.appbtn{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000 !important;
+    font-family: Mono;
+    text-transform: unset !important;
+}
 
 #ProjectsCarousel{
     margin: 20px;
@@ -121,11 +128,45 @@ nav li a:hover {
 .skill-set:hover .card-text {
     color: white;
 }
+.ticon{
+    width: 80px;
+    height: 80px;
+    /* background-color: aqua; */
+}
+
+.lineCenter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#buildProjects{
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+#imageCenter img{
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+}
 
 #resbutton:focus {
+
     text-decoration: none;
     outline: none;
     box-shadow: none;
+}
+.asset{
+    background-color: chocolate;
+}
+
+#projectsCarousel{
+    height: auto;
 }
 
 /* for mobile devices */
@@ -169,5 +210,10 @@ nav li a:hover {
 
 .carousel-indicators{
     color: #000;
-    
 } 
+
+#projectsCarousel{
+    height: 50vh;
+    padding: 20px;
+    margin: 20px;
+}
