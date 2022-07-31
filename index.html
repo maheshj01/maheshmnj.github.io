@@ -148,19 +148,19 @@
           <span class="visually-hidden">Next</span>
         </button> -->
       </div>
-    <div id="retainable-rss-embed" 
+    <div id="retainable-rss-embed"
       data-rss="https://medium.com/feed/retainable,
       https://medium.com/feed/vue-mastery"
-      data-maxcols="3" 
-      data-layout="grid" 
-      data-poststyle="inline" 
-      data-readmore="Read the rest" 
-      data-buttonclass="btn btn-primary" 
+      data-maxcols="3"
+      data-layout="grid"
+      data-poststyle="inline"
+      data-readmore="Read the rest"
+      data-buttonclass="btn btn-primary"
       data-offset="-100"></div>
-        
+
     <h2 class="bg-dark text-light px-3 p-2">Skills</h2>
     <div class="skills">
-        <div class="p-3" id="skills" style="height:300px">
+        <div class="p-3" id="skills" style="height:350px">
             <!-- see: https://getbootstrap.com/docs/5.0/utilities/flex/ -->
                     <div class="d-flex justify-content-center">
                         <div class="ticon"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/dart.svg" width="64" height="64"></div>
@@ -177,9 +177,12 @@
                     </div>
                     <div class="d-flex justify-content-center">
                         <div class="ticon"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/firebase.svg" width="64" height="64"></div>
-                        <div class="ticon"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/github.svg" width="64" height="64"></div>
+                        <div class="ticon"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/mysql.svg" width="64" height="64"></div>
                         <div class="ticon"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/aws.svg" width="64" height="64"></div>
-                    </div>    
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="ticon"><img src="https://raw.githubusercontent.com/get-icon/geticon/master/icons/git.svg" width="64" height="64"></div>
+                    </div>
         </div>
     </div>
 
@@ -262,17 +265,17 @@
             </div>
             </div>
             <div class="form-action pb-4" style="text-align: center;margin: auto">
-                <button onclick="contactuser()" class="btn btn-elegant btn-block" type="button"
+                <button onclick="submitForm()" class="btn btn-elegant btn-block" type="button"
                     style="height: 50px;width: 50%;">Submit</button>
             </div>
-            <script type="text/javascript" src="js/firebase.js"></script>
+            <script type="text/javascript" src="js/src/form.js"></script>
         </div>
     </form>
 
     <footer class="card bg-dark" style="height: 150px">
         <div style="padding:20px; color: white; position: relative; top: 10%; text-align: center; ">
                         Source Code for this Portfolio is Available at <a
-                            href="https://Github.com/maheshmnj/maheshmnj.github.io"
+                            href="https://github.com/maheshmnj/maheshmnj.github.io"
                             style="color: cyan; text-decoration: none;">https://github.com/maheshmnj</a>
                         <a href="include/MyResume.pdf" target="_blank"><button type="button"
                                 class="btn btn-rounded" id="resbutton"

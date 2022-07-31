@@ -4,7 +4,7 @@ var time = new Date().toLocaleTimeString(); // 11:18:48 AM
 var date = new Date().toLocaleDateString(); // 11/16/2015 
 //document.getElementById("sendonclick").addEventListener("click", submitOnClick);
 
-function contactuser(){
+function submitForm(){
 	var Name = document.getElementById("name").value; 
 	var Email = document.getElementById("email").value;
 	var subject = document.getElementById("subject").value;
