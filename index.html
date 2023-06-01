@@ -191,23 +191,35 @@
     <div class="icons text-center">
     <div id="iconsContainer" class="mt-4"></div>
         <script>
-            var urls = [
-                "https://fb.com/maheshmnj",
+              var urls = [
+                'https://leetcode.com/maheshjamdade/',
+                "https://github.com/maheshmnj/",
+                "https://stackoverflow.com/users/8253662/mahesh-jamdade",
                 "https://twitter.com/maheshmnj",
                 "https://www.linkedin.com/in/maheshjamdade/",
                 "https://maheshmnj.medium.com/",
-                "https://stackoverflow.com/users/8253662/mahesh-jamdade",
-                "https://github.com/maheshmnj/",
-                "https://www.quora.com/profile/Mahesh-Jamdade-4"
+                'https://www.hackerrank.com/maheshmnj',
+                // "https://www.quora.com/profile/Mahesh-Jamdade-4"
             ];
             var titles = [
-                'facebook',
+                'leetcode',
+                'github',
+                'stackoverflow',
                 'twitter',
                 'linkedin',
                 'medium',
-                'stackoverflow',
+                'hackerrank',
+                // 'quora'
+            ];
+            var icons = [
+                'code',
                 'github',
-                'quora'
+                'stackoverflow',
+                'twitter',
+                'linkedin',
+                'medium',
+                'code',
+                // 'quora'
             ];
             var str = '<ul class="list-inline list-social-icons ml-2 mb-0">'
                 for(let i in titles){
@@ -226,7 +238,7 @@
                                 <a href= ${urls[i]} title="${titles[i]}" target="_blank">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x text-dark"></i>
-                                        <i class="fa fa-${titles[i]} fa-stack-1x fa-inverse"></i>
+                                        <i class="fa fa-${icons[i]} fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
                         </li>
