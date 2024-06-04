@@ -3,12 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.css";
 import { useDarkMode } from "../contexts/AppThemeProvider";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLightbulb,
-  faMoon,
-  faSackXmark,
-} from "@fortawesome/free-solid-svg-icons";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 function Header() {
   const navbarItems = [
@@ -68,11 +63,7 @@ function Header() {
           }}
         />
         <Navbar.Collapse id="navbarNav">
-          <FontAwesomeIcon
-            onClick={toggleDarkMode}
-            style={{ color: darkMode ? `white` : "black" }}
-            icon={darkMode ? faMoon : faLightbulb}
-          />
+          <ThemeSwitcher />
           <Nav className="ml-auto">
             {navbarItems.map((item) => (
               <Nav.Link
