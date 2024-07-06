@@ -1,15 +1,17 @@
 import React from "react";
-import { FaCode, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaCode, FaGithub, FaLinkedin, FaStackOverflow, FaTwitter } from "react-icons/fa";
 import { useDarkMode } from "../contexts/AppThemeProvider";
-
+import Tooltip from 'react-bootstrap/Tooltip'
+import { OverlayTrigger } from "react-bootstrap";
 const Footer = ({ year }: { year: string }) => {
   const { darkMode } = useDarkMode();
 
   const socialLinks = [
-    { icon: FaGithub, url: "https://github.com/maheshmnj" },
-    { icon: FaLinkedin, url: "https://linkedin.com/in/maheshjamdade" },
-    { icon: FaTwitter, url: "https://twitter.com/maheshmnj" },
-    { icon: FaCode, url: "https://leetcode.com/maheshjamdade/" }
+    { name: "Github", icon: FaGithub, url: "https://github.com/maheshmnj" },
+    { name: "LinkedIn", icon: FaLinkedin, url: "https://linkedin.com/in/maheshjamdade" },
+    { name: "Twitter", icon: FaTwitter, url: "https://twitter.com/maheshmnj" },
+    { name: "Leetcode", icon: FaCode, url: "https://leetcode.com/maheshjamdade/" },
+    { name: "Stackoverflow", icon: FaStackOverflow, url: "https://stackoverflow.com/users/8253662/mahesh-jamdade" }
   ];
 
   return (
@@ -27,15 +29,17 @@ const Footer = ({ year }: { year: string }) => {
             {socialLinks.map((social, index) => {
               const Icon = social.icon;
               return (
-                <a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-decoration-none me-3"
-                >
-                  <Icon size={24} />
-                </a>
+                <OverlayTrigger overlay={<Tooltip id={`tip-${index}`}>{social.name}</Tooltip>}>
+                  <a
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-decoration-none me-3"
+                  >
+                    <Icon size={24} />
+                  </a>
+                </OverlayTrigger>
               );
             })
             }

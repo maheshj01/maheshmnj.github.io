@@ -25,7 +25,7 @@ function App() {
   return (
     <div className={`min-h-screen flex flex-col ${currentTheme.background}`}>
       <Header className="bg-transparent" />
-      <div className="flex-grow pt-16"> {/* Add padding-top here */}
+      <div className="flex-grow mt-16"> {/* Add padding-top here */}
         <Main />
       </div>
       <Footer year="2024" />
