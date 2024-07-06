@@ -45,6 +45,38 @@
   }
 }
 
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 1s ease-out;
+}
+
+.animate-slide-right {
+  animation: slide-right 1s ease-out;
+}
+
 
 .navbar {
   transition: background-color 0.3s ease;

@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -5,7 +6,7 @@ import "../index.css";
 import { useDarkMode } from "../contexts/AppThemeProvider";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
-function Header() {
+function Header({ className }: { className?: string }) {
   const navbarItems = [
     {
       id: 1,
@@ -39,49 +40,40 @@ function Header() {
     },
     {
       id: 6,
-      name: "Lets Connect",
+      name: "Let's Connect",
       url: "#letsconnect",
       target: "_self",
     },
   ];
-  const { darkMode, toggleDarkMode } = useDarkMode();
+  const { darkMode } = useDarkMode();
 
   return (
-    <>
-      <Navbar
-        className="px-4"
-        bg={darkMode ? `dark` : "light"}
-        expand="lg"
-        fixed="top"
-      >
-        <Navbar.Toggle
-          aria-controls="navbarNav"
-          style={{
-            color: darkMode ? `white` : "black",
-            border: "1",
-            borderColor: darkMode ? `white` : "black",
-          }}
-        />
-        <Navbar.Collapse id="navbarNav">
-          <ThemeSwitcher />
-          <Nav className="ml-auto">
-            {navbarItems.map((item) => (
-              <Nav.Link
-                key={item.id}
-                href={item.url}
-                target={item.target}
-                rel="noreferrer"
-              >
-                <p className={darkMode ? "text-white" : "text-black"}>
-                  {item.name}
-                </p>
-              </Nav.Link>
-            ))}
-            {/* <Nav.Link href="#letsconnect">Lets Connect</Nav.Link> */}
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    </>
+    <Navbar
+      className={`px-4 ${className} fixed-top ${darkMode ? 'bg-gray-900 bg-opacity-80' : 'bg-white bg-opacity-80'
+        } backdrop-filter backdrop-blur-lg transition-all duration-300`}
+      expand="lg"
+    >
+      <Navbar.Toggle
+        aria-controls="navbarNav"
+        className={`border ${darkMode ? 'border-white' : 'border-black'}`}
+      />
+      <Navbar.Collapse id="navbarNav">
+        <ThemeSwitcher />
+        <Nav className="ms-auto">
+          {navbarItems.map((item) => (
+            <Nav.Link
+              key={item.id}
+              href={item.url}
+              target={item.target}
+              rel="noreferrer"
+              className={`mx-2 ${darkMode ? "text-white" : "text-black"} hover:opacity-75 transition-opacity duration-300`}
+            >
+              {item.name}
+            </Nav.Link>
+          ))}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
