@@ -7,7 +7,7 @@ import { useDarkMode } from "./contexts/AppThemeProvider";
 import Main from "./components/Main";
 
 function App() {
-  const { darkMode, toggleDarkMode } = useDarkMode();
+  const { darkMode } = useDarkMode();
 
   const themeStyles = {
     light: {
