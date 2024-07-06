@@ -9,13 +9,11 @@ function Main() {
 
     const themeStyles = {
         light: {
-            background: "bg-white",
             text: "text-gray-800",
             button: "hover:bg-blue-600 text-black ",
             avatar: "border-slate-50"
         },
         dark: {
-            background: "bg-gray-800",
             text: "text-gray-100",
             button: "hover:bg-blue-700 text-black ",
             avatar: "border-slate-600"
@@ -25,8 +23,8 @@ function Main() {
     const currentTheme = darkMode ? themeStyles.dark : themeStyles.light;
 
     return (
-        <main className={`mx-auto flex-grow my-16 p-8${currentTheme.background}`}>
-            <section className="flex flex-col md:flex-row items-center justify-between mb-16 px-4">
+        <main className={`mx-auto flex-grow mt-16`}>
+            <section className="flex flex-col md:flex-row items-center justify-between px-4">
                 <div className={`w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg animate-slide-left border-4 md:ml-20 ${currentTheme.avatar} `}>
                     <img
                         src={avatarImage}
@@ -39,7 +37,7 @@ function Main() {
                         Mahesh Jamdade
                     </h1>
                     <p className={`text-xl md:text-2xl mt-4 ${currentTheme.text}`}>
-                        Full Stack Developer
+                        Learn | Code | Build
                     </p>
                 </div>
             </section>
