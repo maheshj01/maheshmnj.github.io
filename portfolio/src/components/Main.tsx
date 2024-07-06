@@ -11,12 +11,14 @@ function Main() {
         light: {
             background: "bg-white",
             text: "text-gray-800",
-            button: "bg-blue-500 hover:bg-blue-600 text-white"
+            button: "bg-blue-500 hover:bg-blue-600 text-white",
+            avatar: "border-slate-50"
         },
         dark: {
             background: "bg-gray-800",
             text: "text-gray-100",
-            button: "bg-blue-600 hover:bg-blue-700 text-white"
+            button: "bg-blue-600 hover:bg-blue-700 text-white",
+            avatar: "border-indigo-950"
         }
     };
 
@@ -25,7 +27,7 @@ function Main() {
     return (
         <main className={`mx-auto flex-grow my-16 p-8${currentTheme.background}`}>
             <section className="flex flex-col md:flex-row items-center justify-between mb-16 px-4">
-                <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg animate-slide-left">
+                <div className={`w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg animate-slide-left border-4 ${currentTheme.avatar} `}>
                     <img
                         src={avatarImage}
                         alt="Mahesh Jamdade"
