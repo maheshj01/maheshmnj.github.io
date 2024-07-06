@@ -3,9 +3,7 @@ name: Deploy Portfolio to GitHub Pages
 on:
   push:
     branches:
-      - master
-    paths:
-      - "root/portfolio/**"
+      - main
 
 jobs:
   deploy:
@@ -18,11 +16,9 @@ jobs:
           node-version: "14"
       - name: Install Dependencies
         run: |
-          cd root/portfolio
           npm ci
       - name: Build
         run: |
-          cd root/portfolio
           npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
